@@ -7,7 +7,7 @@ const postRoutes = require("./routes/posts");
 const userRoutes = require("./routes/user");
 
 const app = express();
-const PORT = process.env.APP_PORT;
+const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use("/images", express.static(path.join("backend/images")));
